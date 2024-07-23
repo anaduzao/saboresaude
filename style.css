@@ -112,18 +112,18 @@ nav ul li a {
 }
 
 button {
-    background-color: #007bff; /* Cor de fundo */
-    color: white;              /* Cor do texto */
-    border: none;              /* Remove a borda padrão */
-    padding: 10px 15px;        /* Espaçamento interno */
-    border-radius: 5px;        /* Bordas arredondadas */
-    cursor: pointer;           /* Muda o cursor para pointer */
-    font-size: 16px;           /* Tamanho da fonte */
-    transition: background-color 0.3s; /* Efeito de transição */
+    background-color: #007bff;
+    color: white;             
+    border: none;              
+    padding: 10px 15px;        
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 16px;           
+    transition: background-color 0.3s; 
 }
 
 button:hover {
-    background-color: #0056b3; /* Cor do fundo ao passar o mouse */
+    background-color: #0056b3;
 }
 
 section {
@@ -140,17 +140,28 @@ footer {
     text-align: center;
     padding: 10px 0;
     background: #333;
-    color: white;
-}
+    color: white;}
 
-@media screen and (min-width: 1024px) {
-    .lista{
-        right: 8%;
-        width: 14%;
-        padding: 20px;
-        text-align: start;
+    .caixa:checked ~ .lista{
+        display: block;
     }
-    .lista-item:hover{
-        background-color: rgb(119, 51, 51);
+    
+    #menu{
+        display: none;
     }
-}
+    
+    .lista-item{
+        padding: 12px 0;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        .lista{
+            right: 8%;
+            width: 14%;
+            padding: 20px;
+            text-align: start;
+        }
+        .lista-item:hover{
+            background-color: rgb(119, 51, 51);
+        }
+    }
